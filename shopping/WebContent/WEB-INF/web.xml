@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>shopping</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<servlet-class>com.qzp.controller.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ChangePassServlet</servlet-name>
+  	<servlet-class>com.qzp.controller.ChangePassServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ChangePassServlet</servlet-name>
+  	<url-pattern>/ChangePassServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>com.qzp.controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>HelpGo</servlet-name>
+  	<servlet-class>com.qzp.controller.HelpGo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>HelpGo</servlet-name>
+  	<url-pattern>/HelpGo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MyCartServlet</servlet-name>
+  	<servlet-class>com.qzp.controller.MyCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MyCartServlet</servlet-name>
+  	<url-pattern>/MyCartServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>LikeServlet</servlet-name>
+  	<servlet-class>com.qzp.controller.LikeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LikeServlet</servlet-name>
+  	<url-pattern>/LikeServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>TypeBookServlet</servlet-name>
+  	<servlet-class>com.qzp.controller.TypeBookServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TypeBookServlet</servlet-name>
+  	<url-pattern>/TypeBookServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AdviceServlet</servlet-name>
+  	<servlet-class>com.qzp.controller.AdviceServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AdviceServlet</servlet-name>
+  	<url-pattern>/AdviceServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 关于管理员的 -->
+    <servlet>
+  	<servlet-name>AdminLoginServlet</servlet-name>
+  	<servlet-class>com.qzp.controller.AdminLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AdminLoginServlet</servlet-name>
+  	<url-pattern>/AdminLoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<servlet-class>com.qzp.controller.AdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<url-pattern>/AdminServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>AdminUserServlet</servlet-name>
+  	<servlet-class>com.qzp.controller.AdminUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AdminUserServlet</servlet-name>
+  	<url-pattern>/AdminUserServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AdminBookServlet</servlet-name>
+  	<servlet-class>com.qzp.controller.AdminBookServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AdminBookServlet</servlet-name>
+  	<url-pattern>/AdminBookServlet</url-pattern>
+  </servlet-mapping>  
+</web-app>

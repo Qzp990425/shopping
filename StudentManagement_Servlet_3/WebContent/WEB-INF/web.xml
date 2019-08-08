@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>StudentManagement_Servlet_2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>StudentLogin</servlet-name>
+    <servlet-class>com.rjxy.view.StudentLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentLogin</servlet-name>
+    <url-pattern>/StudentLogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>StudentCheckLogin</servlet-name>
+    <servlet-class>com.rjxy.controller.StudentCheckLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentCheckLogin</servlet-name>
+    <url-pattern>/StudentCheckLogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Main</servlet-name>
+    <servlet-class>com.rjxy.view.Main</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Main</servlet-name>
+    <url-pattern>/Main</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>StudentManage</servlet-name>
+    <servlet-class>com.rjxy.view.StudentManage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentManage</servlet-name>
+    <url-pattern>/StudentManage</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>StudentMessageServlet</servlet-name>
+    <servlet-class>com.rjxy.controller.StudentMessageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentMessageServlet</servlet-name>
+    <url-pattern>/StudentMessageServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>Ok</servlet-name>
+    <servlet-class>com.rjxy.view.Ok</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Ok</servlet-name>
+    <url-pattern>/Ok</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>Wrong</servlet-name>
+    <servlet-class>com.rjxy.view.Wrong</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Wrong</servlet-name>
+    <url-pattern>/Wrong</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UpdateStudentView</servlet-name>
+    <servlet-class>com.rjxy.view.UpdateStudentView</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateStudentView</servlet-name>
+    <url-pattern>/UpdateStudentView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>StudentAdd</servlet-name>
+    <servlet-class>com.rjxy.view.StudentAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentAdd</servlet-name>
+    <url-pattern>/StudentAdd</url-pattern>
+  </servlet-mapping> 
+  
+    <servlet>
+    <servlet-name>StudentFind</servlet-name>
+    <servlet-class>com.rjxy.view.StudentFind</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentFind</servlet-name>
+    <url-pattern>/StudentFind</url-pattern>
+  </servlet-mapping> 
+</web-app>

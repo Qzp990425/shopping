@@ -38,7 +38,7 @@ public class RegisterServlet extends HttpServlet{
 			}else {
 				registerService.addUser(user);
 				mess = "注册成功";
-				System.out.println(mess);
+				System.out.println(user.getUsername()+mess);
 			}
 		}
 		request.setAttribute("mess",mess);

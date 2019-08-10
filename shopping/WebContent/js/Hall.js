@@ -9,7 +9,7 @@ $(function () {
 		let $allItems = $('#sp_carousel .carousel-item');
 		//console.log($allItems) 输出查看
 		//4 遍历
-		$allItems.each((index,item) =>{ 
+		$allItems.each((index,item) =>{
 			//console.log(item);
 			//4.1取出图片路径
 			let src = isShowBigImage ? $(item).data('lg-img'): $(item).data('sm-img');

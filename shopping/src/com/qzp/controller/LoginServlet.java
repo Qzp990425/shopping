@@ -34,6 +34,7 @@ public class LoginServlet extends HttpServlet{
 				request.getRequestDispatcher("/login.jsp").forward(request, response);
 			} else {
 				user = loginService.getUser(user);
+				System.out.println(user.getUsername()+"已经登录");
 				request.getSession().setAttribute("user", user);
 				request.getRequestDispatcher("/WEB-INF/jsp/myMess.jsp").forward(request, response);
 			}
